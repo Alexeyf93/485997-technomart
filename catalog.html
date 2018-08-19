@@ -9,22 +9,23 @@
 
 	  	<section class="order-navigation">
 	  		<a class="logo" href="index.html">Техномарт</a>
-	  		<a class="search" href="#">Поиск</a>
-	  		<ul class="user-navigation">
-	  			<li><a href="#">Закладки:</a></li>
-	  			<li><a href="#">Корзина:</a></li>
-	  			<li><a href="#">Оформить заказ</a></li>
-	  		</ul>
+	  			  		
+			<form action="#" method="post">
+				<button type="submit">Поиск</button>
+				<input type="text" name="search-text" placeholder="Перфоратор">
+			</form>
+			
+			<button class="bookmarks">Закладки:0</button>
+			<button class="basket">Корзина:0</button>
+	  		<a href="#" class="order">Оформить заказ</a>
 	  	</section>
 			
 			<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 			<p class="tel">+7 (812) 555-05-55</p>
 			<span>г.Санкт-Петербург, ул. Конюшенная, д. 19/8</span>
 
-			<ul class="user-navigation">
-         		<li>Вход</li>
-         		<li>Регистрация</li>
-        	</ul>
+			<button class="enter">Войти</button>
+			<button class="registration">Регистрация</button>
 
         <nav class="main-navigation">
         	<ul class="site-navigation">
@@ -53,6 +54,66 @@
 
 		<section class="filters">
 	        <h3 class="visually-hidden">Фильтр товаров</h3>
+	        <div class="sorting">
+	        	<p>Сортировка:</p>
+	        	<button>По цене</button>
+	        	<button>По типу</button>
+	        	<button>По функционалу</button>
+	        </div>
+
+	        <form action="https://echo.htmlacademy.ru" class="filter">
+	        	<p>Фильтр:</p>
+	        	
+	        	<label >Цена:
+	        		<input type="range">
+	        	</label>
+
+	        	<legend>Производители:</legend>
+			        <ul>
+			          <li>
+			            <input type="checkbox" name="bosch" id="bosch" checked>
+			            <label for="bosch">
+			              Bosch
+			            </label>
+			          </li>
+			          <li>
+			            <input type="checkbox" name="interscol" id="interscol">
+			            <label for="interscol">
+			              Интерскол
+			            </label>
+			          </li>
+			          <li>
+			            <input type="checkbox" name="makita" id="makita" checked>
+			            <label for="makita">
+			              Makita
+			            </label>
+			          </li>
+			          <li>
+			            <input type="checkbox" name="dewalt" id="dewalt">
+			            <label for="dewalt">
+			              Dewalt
+			            </label>
+			          </li>
+			          <li>
+			            <input type="checkbox" name="hitachi" id="hitachi">
+			            <label for="hitachi">
+			              Hitachi
+			            </label>
+			          </li>
+			        </ul>
+
+			        <legend>Питание:</legend>
+			       
+		      		<label>
+      					<input type="radio" name="radio">Аккумуляторные
+    				</label>
+  
+    				<label>
+      					<input type="radio" name="radio">Сетевые
+    				</label>
+
+    				<button type="submit">Показать</button>
+	        </form>
 	        <!-- Здесь будет форма -->
       	</section>
 
@@ -158,9 +219,9 @@
 		
 		<p>&copy; 2010-2017 Компания "Техномарт" Все права защищены</p>
 		<ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#">Подписывайтесь на нас в Вконтакте</a></li>
+          <li><a class="social-button" href="#">Подписывайтесь на нас в Фейсбук</a></li>
+          <li><a class="social-button" href="#">Подписывайтесь на нас в Инстаграм</a></li>
         </ul>
         <p class="footer-copyright">
 			<b>Обратная связь:</b> 

@@ -10,12 +10,15 @@
 
 	  	<section class="order-navigation">
 	  		<p class="logo">Техномарт</p>
-	  		<a class="search" href="#">Поиск</a>
-	  		<ul class="user-navigation">
-	  			<li><a href="#">Закладки:</a></li>
-	  			<li><a href="#">Корзина:</a></li>
-	  			<li><a href="#">Оформить заказ</a></li>
-	  		</ul>
+	  		
+			<form action="#" method="post">
+				<button type="submit">Поиск</button>
+				<input type="text" name="search-text" placeholder="Перфоратор">
+			</form>
+
+	  		<button class="bookmarks">Закладки:0</button>
+			<button class="basket">Корзина:0</button>
+	  		<a href="#" class="order">Оформить заказ</a>
 	  	</section>
 			
 			<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
@@ -26,6 +29,9 @@
          		<li>Вход</li>
          		<li>Регистрация</li>
         	</ul>
+
+        	<button class="enter">Войти</button>
+			<button class="registration">Регистрация</button>
 
         <nav class="main-navigation">
         	<ul class="site-navigation">
@@ -67,11 +73,11 @@
 			
 			
 			<div class="slaider">
-				<img src="img/slaider1.jpg" alt="Дрель" width="620" height="265">
-				<!-- <img src="img/slaider2.jpg" alt="Дрель-2" width="620" height="265"> -->
+				<img src="img/slaider1.jpg" alt="Экземпляр дрели" width="620" height="265">
+				<!-- <img src="img/slaider2.jpg" alt="Экземпляр перфоратора" width="620" height="265"> -->
 				<p>Дрели</p>
 				<span>Соседям на радость!</span>
-				<a href="#" class="buttom">Открыть каталог</a>
+				<a href="#" class="button">Открыть каталог</a>
 			</div>
 		</section>
 
@@ -111,14 +117,13 @@
 			<h2>Популярные производители:</h2>
 			<a href="#" class="button">Все производители</a>
 
-			<img src="img/bosh.jpg" alt="BOSCH" width="220" height="145">
-			<img src="img/makita.jpg" alt="Makita" width="220" height="145">
-			<img src="img/dewalt.jpg" alt="DeWALT" width="220" height="145">
-			<img src="img/interscol.jpg" alt="Интерскол" width="220" height="145">
-			<img src="img/hitachi.jpg" alt="Hitachi" width="220" height="145">
-			<img src="img/lg.jpg" alt="LG" width="220" height="145">
-			<img src="img/aeg.jpg" alt="AEG" width="220" height="145">
-			<img src="img/metabo.jpg" alt="Metabo" width="220" height="145">
+			<a href="#"><img src="img/bosh.jpg" alt="BOSCH" width="220" height="145"></a>
+			<a href="#"><img src="img/makita.jpg" alt="Makita" width="220" height="145"></a>
+			<a href="#"><img src="img/dewalt.jpg" alt="DeWALT" width="220" height="145"></a>
+			<a href="#"><img src="img/interscol.jpg" alt="Интерскол" width="220" height="145"></a>
+			<a href="#"><img src="img/lg.jpg" alt="LG" width="220" height="145"></a>
+			<a href="#"><img src="img/aeg.jpg" alt="AEG" width="220" height="145"></a>
+			<a href="#"><img src="img/metabo.jpg" alt="Metabo" width="220" height="145"></a>
 
 		</section>
 
@@ -133,9 +138,23 @@
 					<h3>Доставка</h3>
 					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
 					   Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p></li>
-					   <img src="img/delivery.png" alt="Доставка" width="465" height="260">
-				<li><a href="#">Гарантия</a></li>
-				<li><a href="#">Кредит</a></li>
+					   <img src="img/delivery.png" alt="Доставка" width="470" height="260">
+				<li><a href="#">Гарантия</a>
+					<h3>Гарантия</h3>
+					<p>Если купленный у нас товар поломается или заискрит,
+					   а также в случае пожара, спровоцированного его возгаранием,
+					   вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+					   сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+					   <img src="img/warranty.png" alt="100% гарантия" width="390" height="285">
+				</li>
+				<li><a href="#">Кредит</a>
+					<h3>Кредит</h3>
+					<p>Залезть в долговую яму стало проще!
+					   Кредитные консультанты придут вам на помощь.</p>
+					   
+					   <img src="img/credit.png" alt="Кредит" width="465" height="285">
+					   <a href="#" class="button">Отправить заявку</a>
+				</li>
 			</ul>
 
 		</section>
@@ -157,11 +176,28 @@
 			<h3>Контакты</h3>
 			<p>Вы можете забрать товар сами, заехав в наш офис:</p>
 
-			<img src="img/small-map.jpg" alt="Маленькая карта" width="300" height="160">
+			<img src="img/small-map.jpg" alt="Адрес г.Санкт-Петербург, ул. Конюшенная, д. 19/8" width="300" height="160">
 			<a href="#" class="button">Заблудились? Напишите нам!</a>
 
-			<!-- <img src="img/map.jpg" alt="Карта" width="1200" height="780"> -->
+			<!-- <img src="img/map.jpg" alt="Адрес на карте г.Санкт-Петербург, ул. Конюшенная, д. 19/8" width="1200" height="780"> -->
 
+			<!-- pupap -->
+			<form action="https://echo.htmlacademy.ru" method="post">
+				
+				<label for="name">Ваше имя:</label>
+				<input id="name" type="text" placeholder="Представтесь, пожалуйста">
+
+				<label for="email">Ваш e-mail:</label>
+				<input id="email" type="email" placeholder="Для отправки ответа">
+
+				<label for="text">Текс письма:</label>
+				<textarea name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+
+				<button type="sybmit">Отправить</button>
+				
+			</form>
+			<button>Отмена</button>
+			
 		</section>
 
 	</main>
@@ -193,9 +229,9 @@
 		
 		<p>&copy; 2010-2017 Компания "Техномарт" Все права защищены</p>
 		<ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="#">Подписывайтесь на нас в Вконтакте</a></li>
+          <li><a class="social-button" href="#">Подписывайтесь на нас в Фейсбук</a></li>
+          <li><a class="social-button" href="#">Подписывайтесь на нас в Инстаграм</a></li>
         </ul>
         <p class="footer-copyright">
 			<b>Обратная связь:</b> 
