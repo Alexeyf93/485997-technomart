@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&subset=cyrillic');
+
 body{
 	margin: 0;
 	padding: 0;
@@ -6,6 +8,8 @@ body{
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 400;
+
+	box-sizing: border-box;
 }
 
 a {
@@ -14,12 +18,25 @@ a {
 
 /*-----------------------order-navigation-----------------------------------------*/
 
+.main-header-wrapper{
+	background-color: #293448;
+}
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 .order-navigation{
+	display: flex;
+	justify-content: space-between;
 	background-color: #293448;
 	color: #ffffff;
 }
 
 .order-navigation a.logo{
+	width: 220px;
 	font-size: 24px;
   	line-height: 24px;
   	color: #ffffff;
@@ -34,6 +51,7 @@ a {
 }
 
 .order-navigation button{
+	width: 70px;
 	font-size: 17px;
   	line-height: 18px;
   	background-color: #293448;
@@ -42,12 +60,21 @@ a {
   	cursor: pointer;
 }
 
+.order-navigation .bookmarks{
+	width: 150px;
+}
+
+.order-navigation .basket{
+	width: 150px;
+}
+
 .order-navigation button:active{
 	background-color: #161C28;
 	color: #B7BBBE;
 }
 
 .order-navigation input{
+	width: 160px;
 	font-size: 17px;
   	line-height: 18px;
 	background-color: #293448;
@@ -61,6 +88,7 @@ a {
 }
 
 .order-navigation a.order{
+	width: 150px;
 	font-size: 17px;
   	line-height: 18px;
   	background-color: #63A63D;
@@ -79,10 +107,21 @@ a {
 /*-------------------------------------------------address----------------------------------------*/
 
 .address{
+	display: flex;
+	justify-content: space-between;
 	background-color: #F3F7F8;
 }
 
+.address-wrapper{
+	background-color: #F3F7F8;
+}
+
+.address-item{
+	width: 310px;
+}
+
 .address h1{
+	width: 300px;
 	font-size: 16px;
 	line-height: 23px;
 	color: #EF434E;
@@ -103,6 +142,7 @@ a {
 }
 
 .address button{
+	width: 150px;
 	font-size: 21px;
 	line-height: 21px;
 	background-color: #ffffff;
@@ -124,6 +164,11 @@ a {
 
 .main-navigation{
 	background-color: #32425C;
+}
+
+.site-navigation{
+	display: flex;
+	justify-content: space-between;
 }
 
 .main-navigation a{
@@ -152,6 +197,15 @@ a {
 	color: #ffffff;
 }
 
+.description-items{
+	display: flex;
+	justify-content: space-between;
+}
+
+.description-items-slaider{
+	display: flex;
+}
+
 .description h3{
 	font-size: 24px;
 	line-height: 30px;
@@ -161,6 +215,10 @@ a {
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
+}
+
+.description-item{
+	width: 300px;
 }
 
 .description-item:nth-child(1){
@@ -204,6 +262,8 @@ a {
 }
 
 .slaider{
+	width: 620px;
+	order: 2;
 	background-color: #170D0C;
 }
 
@@ -237,6 +297,8 @@ a {
 
 .popular-products-item,
 .popular-producers-item{
+	display: flex;
+	justify-content: space-between;
 	font-size: 30px;
 	line-height: 30px;
 	background-color: #F9F6F1;
@@ -244,7 +306,13 @@ a {
 	text-transform: uppercase;
 }
 
+.products-wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+
 .product{
+	width: 220px;
 	border: 1px solid #EAEAEA;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: bold;
@@ -305,6 +373,9 @@ a {
 }
 
 /*--------------------------------------------service--------------------------------------------*/
+.service-wrapper{
+	background-color: #F3F7F8;
+}
 
 .service{
 	background-color: #F3F7F8;
@@ -358,6 +429,15 @@ a {
 
 /*---------------------------------------------about-us--------------------------------------*/
 
+.about-contacts{
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-us{
+	width: 520px;
+}
+
 .about-us h3,
 .contacts h3{
 	font-size: 36px;
@@ -375,11 +455,27 @@ a {
 	line-height: 20px;
 }
 
+.contacts{
+	width: 300px;
+}
+
 /*---------------------------------------------navigation--------------------------------------*/
+.navigation-items{
+	display: flex;
+	
+}
 
 .navigation{
 	background-color: #32425C;
 	color: #ffffff;
+}
+
+.navigation-item-left{
+	width: 340px;
+}
+
+.navigation-item-right{
+	width: 580px;
 }
 
 .navigation a.logo{
@@ -399,6 +495,11 @@ a {
 .navigation p{
 	font-size: 18px;
 	line-height: 24px;
+}
+
+.navigation-list{
+	display: flex;
+	justify-content: space-between;
 }
 
 .navigation-list li{
@@ -435,6 +536,10 @@ footer{
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
+}
+
+.footer-items{
+	display: flex;
 }
 
 .footer-social{
