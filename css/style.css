@@ -35,7 +35,7 @@ a {
 	color: #ffffff;
 }
 
-.order-navigation a.logo{
+.order-navigation .logo{
 	width: 220px;
 	font-size: 24px;
   	line-height: 24px;
@@ -46,7 +46,7 @@ a {
   	text-transform: uppercase;
 }
 
-.order-navigation a.logo:hover{
+.order-navigation .logo:hover{
 	background-color: #BA2632;
 }
 
@@ -164,6 +164,7 @@ a {
 
 .main-navigation{
 	background-color: #32425C;
+	margin-bottom: 120px;
 }
 
 .site-navigation{
@@ -199,11 +200,18 @@ a {
 
 .description-items{
 	display: flex;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 }
 
 .description-items-slaider{
 	display: flex;
+	flex-direction: row-reverse;
+	/*justify-content: space-between;*/
+}
+
+.description-right{
+	display: flex;
+	flex-direction: column;
 }
 
 .description h3{
@@ -217,57 +225,72 @@ a {
 	text-transform: uppercase;
 }
 
-.description-item{
-	width: 300px;
-}
-
-.description-item:nth-child(1){
+.description-item1{
 	background-color: #FFBF47;
+	width: 300px;
+	min-height: 123px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
-.description-item:nth-child(1) p{
+.description-item1 p{
 	background-color: #E5AD40;
 }
 
-.description-item:nth-child(2){
+.description-item2{
 	background-color: #3BBCE3;
+	width: 300px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	min-height: 123px;
 }
 
-.description-item:nth-child(2) p{
+.description-item2 p{
 	background-color: #34A9CC;
 }
 
-.description-item:nth-child(3){
+.description-item3{
 	background-color: #DD91D9;
+	width: 300px;
+	margin-bottom: 20px;
+	min-height: 123px;
 }
 
-.description-item:nth-child(3) p{
+.description-item3 p{
 	background-color: #C782C3;
 }
 
-.description-item:nth-child(4){
+.description-item4 {
 	background-color: #8ED78E;
+	width: 300px;
+	min-height: 123px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
 
-.description-item:nth-child(4) p{
+.description-item4 p{
 	background-color: #80C181;
 }
 
-.description-item:nth-child(5){
+.description-item5{
 	background-color: #FEC047;
+	width: 300px;
+	min-height: 123px;
 }
 
-.description-item:nth-child(5) p{
+.description-item5 p{
 	background-color: #E5AD40;
 }
 
 .slaider{
 	width: 620px;
-	order: 2;
 	background-color: #170D0C;
+	margin-right: 20px;
+	margin-bottom: 53px;
 }
 
 .slaider p{
+	font-weight: bold;
 	font-size: 36px;
 	line-height: 36px;
 }
@@ -299,23 +322,41 @@ a {
 .popular-producers-item{
 	display: flex;
 	justify-content: space-between;
-	font-size: 30px;
-	line-height: 30px;
 	background-color: #F9F6F1;
 	color: #32425B;
 	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.popular-products-item h2,
+.popular-producers-item h2{
+	font-size: 30px;
+	line-height: 30px;
 }
 
 .products-wrapper{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	margin-bottom: 85px;
 }
+
+.products-wrapper a{
+	margin-bottom: 20px;
+}
+
+.products-wrapper a:hover{
+	box-shadow: 0 0 15px grey;
+}
+
 
 .product{
 	width: 220px;
+	min-height: 316px;
 	border: 1px solid #EAEAEA;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: bold;
+	margin-bottom: 20px;
 }
 
 .product p.product-text{
@@ -478,7 +519,7 @@ a {
 	width: 580px;
 }
 
-.navigation a.logo{
+.navigation .logo{
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
@@ -488,7 +529,7 @@ a {
 	border-bottom: 5px solid #B52932;
 }
 
-.navigation a.logo:hover{
+.navigation .logo:hover{
 	background-color: #B52932;
 }
 
@@ -601,8 +642,23 @@ footer{
 
 /*------------------------------------------catalog.html----------------------------------------------*/
 
+/*------------------------------------------breadcrumbs----------------------------------------------*/
+
+.breadcrumbs{
+	display: flex;
+}
+
 .breadcrumbs a{
 	color: #000000;
+	font-size: 13px;
+	line-height: 18px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.breadcrumbs-current{
+	font-size: 13px;
+	line-height: 18px;
 }
 
 .breadcrumbs a:hover{
@@ -611,43 +667,39 @@ footer{
 
 .breadcrumbs li{
 	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 13px;
-	line-height: 18px;
+	text-transform: uppercase;
 	list-style: none;
 }
 
-.container-text{
+.instrument-text{
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #31425B;
 	font-size: 30px;
 	line-height: 30px;
+	min-height: 90px;
 	background-color: #F2F6F9;
 }
+
+/*-------------------------------------------------filters------------------------------------------------------*/
 
 .filters{
 	text-transform: uppercase;
 	font-family: "PT Sans", Arial, sans-serif;
-}
-
-.sorting p{
-	font-size: 13px;
-	line-height: 18px;
-}
-
-.sorting a{
-	color: #CBCBCB;
-}
-
-.sorting a:hover{
-	color: #000000;
-}
-
-.sorting a:active{
-	color: #EC3642;
+	margin-right: 38px;
 }
 
 .filter-item{
 	font-size: 17px;
 	line-height: 30px;
 	font-weight: bold;
+}
+
+.filter p{
+	background-color: #F7F2EC;
+	min-height: 38px;
+	margin: 0;
+	margin-bottom: 20px;
 }
 
 .filter-item label{
@@ -676,7 +728,74 @@ footer{
 	border-color: #EE3642;
 }
 
+.filters{
+	width: 220px;
+	min-height: 750px;
+}
+
+/*--------------------------------------------------------catalog------------------------------------------*/
+
+.catalog{
+	display: flex;
+	flex-direction: column;
+	width: 720px;
+	min-height: 1145px;
+}
+
+.catalog-item{
+	display: flex;
+}
+
+.catalog-product-item{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sorting{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 38px;
+	text-transform: uppercase;
+	font-family: "PT Sans", Arial, sans-serif;
+	background-color: #F7F2EC;
+	margin-bottom: 20px;
+}
+
+.sorting p{
+	margin-right: 140px;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.sorting a{
+	color: #CBCBCB;
+}
+
+.sorting a:hover{
+	color: #000000;
+}
+
+.sorting a:active{
+	color: #EC3642;
+}
+
+.product{
+	margin-right: 20px;
+}
+
+.product:nth-child(3n){
+	margin-right: 0;
+}
+
+.product:hover{
+	box-shadow: 0 0 15px grey;
+}
 /*-----------------------------------------------------pagination-list---------------------------------*/
+
+.pagination-list{
+	margin-bottom: 60px;
+}
 
 .pagination-list li{
 	list-style: none;
@@ -685,6 +804,8 @@ footer{
 .pagination-list a{
 	color: #000000;
 	border: 1px solid #E5E5E5;
+	width: 36px;
+	height: 36px;
 }
 
 .pagination-list a:hover{
@@ -699,6 +820,10 @@ footer{
 	background-color: #F2F6F9;
 }
 
+/*---------------------------------------------------------catalog-description-----------------------------------*/
+.catalog-wrapper{
+	background-color: #F2F6F9;
+}
 
 .catalog-description h3{
 	font-size: 30px;
