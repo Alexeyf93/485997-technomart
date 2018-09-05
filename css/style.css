@@ -255,7 +255,7 @@ input[type="radio"].visually-hidden {
 	font-weight: normal;
 }
 
-.address p{
+.address p:not(.address-text){
 	margin: 0;
 	margin-top: 46px;
 	position: relative;
@@ -269,7 +269,7 @@ input[type="radio"].visually-hidden {
 	padding-right: 40px;
 }
 
-.address p::before{
+.address p:not(.address-text)::before{
 	content: "";
 	position: absolute;
 	width: 18px;
@@ -1759,6 +1759,119 @@ footer{
 	flex-direction: column;
 	width: 720px;
 	min-height: 1145px;
+}
+
+.order-navigation .basket-catalog{
+	background-color: #EF3644;
+}
+
+.order-navigation .basket-catalog:hover,
+.order-navigation .basket-catalog:focus{
+	background-color: #C92C37;
+}
+
+.order-navigation .basket-catalog:active{
+	background-color: #BA2632;
+}
+
+.order-navigation .search-catalog{
+	width: 131px;
+}
+
+.address .address-text{
+	position: relative;
+	color: #000000;
+	margin: 0;
+	margin-top: 47px;
+	margin-bottom: 8px;
+	padding: 10px 0;
+	font-size: 21px;
+	line-height: 21px;
+	padding-left: 45px;
+	padding-right: 68px;
+	background-color: #fff;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.address .address-text:hover:before{
+	opacity: 1;
+}
+
+.address .address-text:hover:after{
+	opacity: 1;
+}
+
+.address .address-text:active{
+	color: #c5c5c5;
+}
+
+.address .address-text:active:before,
+.address .address-text:active:after{
+	color: #c5c5c5;
+	opacity: 0.1;
+}
+
+.address-text:before{
+	content: "";
+	position: absolute;
+	left: 13px;
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/icon-user.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.1;
+}
+
+.address-text:after{
+	content: "";
+	position: absolute;
+	left: 268px;
+	top: 12px;
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/icon-logout.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.1;
+}
+
+.address-right a{
+	font-size: 16px;
+	color: #31425C;
+	text-decoration: underline;
+}
+
+.address-right a:hover,
+.address-right a:focus{
+	color: #EF3743;
+}
+
+.address-right a:active{
+	color: #C5C5C5;
+}
+
+.address-right a:first-of-type{
+	position: relative;
+	margin-left: 15px;
+	margin-right: 30px;
+}
+
+.address-right a:first-of-type:after{
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: 88px;
+	width: 5px;
+	height: 5px;
+	background-color: #31425C;
+	border-radius: 50%;
+	cursor: auto;
+}
+
+.address .address-item-catalog{
+	margin-right: 50px;
 }
 
 .catalog-item{
