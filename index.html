@@ -107,7 +107,7 @@
 							<p>Дрели</p>
 							<span>Соседям на радость!</span>
 						</div>
-						<a href="#" class="button">Открыть каталог</a>
+						<a href="catalog.html" class="button">Открыть каталог</a>
 						
 					</div>
 
@@ -254,30 +254,8 @@
 						<h3>Контакты</h3>
 						<p>Вы можете забрать товар сами, заехав в наш офис:</p>
 
-						<img src="img/small-map.jpg" alt="Адрес г.Санкт-Петербург, ул. Конюшенная, д. 19/8" width="300" height="160">
-						<a href="#" class="button">Заблудились? Напишите нам!</a>
-
-						<!-- <img src="img/map.jpg" alt="Адрес на карте г.Санкт-Петербург, ул. Конюшенная, д. 19/8" width="1200" height="780"> -->
-
-						<!-- <div class="pupap-user">
-							<form action="https://echo.htmlacademy.ru" method="post">
-								
-								<label for="name">Ваше имя:</label>
-								<input id="name" type="text" placeholder="Представтесь, пожалуйста">
-
-								<label for="email">Ваш e-mail:</label>
-								<input id="email" type="email" placeholder="Для отправки ответа">
-
-								<label for="text">Текс письма:</label>
-								<textarea name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-								
-								<div class="pupap-user-footer"></div>
-								<button type="sybmit" class="button">Отправить</button>
-
-							</form>
-							<button class="button-pupap-user">Отмена</button>
-								
-						</div> -->
+						<a href="" class="contacts-map"><img src="img/small-map.jpg" alt="Адрес г.Санкт-Петербург, ул. Конюшенная, д. 19/8" width="300" height="160"></a>
+						<a href="#" class="button contacts-button">Заблудились? Напишите нам!</a>
 						
 					</section>
 				</div>
@@ -351,7 +329,39 @@
 	      	</div>
 		</div>
 	</footer>
-    
+
+	<section class="modal modal-login">
+		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+			
+			<div class="modal-item">
+				<p class="modal-text"><label class="user-login" for="user-login">Ваше имя:</label><br>
+	      		<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Имя Фамилия"></p>
+
+	      		<p class="modal-text"><label class="" for="user-e-mail">Ваш e-mail:</label><br>
+	      		<input class="login-icon-e-mail" id="user-e-mail" type="e-mail" name="e-mail" placeholder="email@example.com"></p>
+			</div>
+
+      		<p class="user-text"><label for="user-text">Текст письма:</label></p>
+      		<textarea name="user-text" id="user-text" placeholder="В свободной форме"></textarea>
+
+      		
+      		<div class="modal-footer">
+      			<button class="modal-send" type="submit">Отправить</button>
+      		</div>
+      		
+      	</form>
+  		<button class="modal-close" type="button">Закрыть</button>
+	</section>
+
+	<section class="modal-map">
+		<div class="modal-map-item">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.3208587156073!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1536137080177" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<img src="img/map.jpg" alt="Адрес на карте г.Санкт-Петербург, ул. Конюшенная, д. 19/8" width="940" height="450">
+			<button class="modal-map-close" type="button">Закрыть</button>
+		</div>
+	</section>
+
+	<script src="js/popap.js"></script>
 
   </body>
 </html>

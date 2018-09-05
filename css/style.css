@@ -1760,11 +1760,32 @@ footer{
 }
 
 .sorting-text2{
-	margin-right: 63px;
+	margin-right: 55px;
 }
 
 .sorting-text3{
-	margin-right: 90px;
+	margin-right: 40px;
+}
+
+.sorting-img1{
+	fill: #C5C5C5;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.sorting-img2{
+	fill: #C5C5C5;
+	cursor: pointer;
+}
+
+.sorting-img1:hover,
+.sorting-img2:hover{
+	fill: #231F20;
+}
+
+.sorting-img1:active,
+.sorting-img2:active{
+	fill: #EE3643;
 }
 
 .sorting p{
@@ -1903,4 +1924,385 @@ footer{
 	padding-bottom: 70px;
 	font-size: 14px;
 	line-height: 18px;
+}
+
+
+/*--------------------------------------------------modal------------------------------------------------------*/
+
+.modal {
+	display: none;
+	position: fixed;
+	color: #000000;
+	background-color: #FCFDFD;
+	box-shadow: 0 0 35px 0 #000;
+	border-top: 7px solid #ff6666;
+	box-sizing: border-box;
+}
+
+.modal-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-login {
+	top: 120px;
+  	left: 50%;
+	width: 620px;
+	margin-left: -310px;
+	z-index: 100;
+}
+
+.modal-close {
+	position: absolute;
+  	top: 10px;
+  	right: 10px;
+	width: 22px;
+	height: 22px;
+	font-size: 0;
+	background-color: #FCFDFD;
+	border: 0;
+	cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+  	left: 2px;
+	width: 19px;
+	height: 3px;
+	background-color: #ff3333;
+}
+
+.modal-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-close::after {
+	transform: rotate(-45deg);
+}
+
+.modal-item{
+	display: flex;
+	padding-left: 80px;
+	padding-top: 30px;
+}
+
+.modal-text{
+	width: 220px;
+}
+
+.modal-login label{
+	font-size: 18px;
+	line-height: 18px;
+	color: #000000;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.user-text{
+	padding-left: 80px;
+	margin: 0;
+}
+
+.modal-login input{
+	box-sizing: border-box;
+	width: 220px;
+	padding: 9px 15px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+	font-family: "PT Sans", Arial, sans-serif;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+}
+
+.modal-text:first-child{
+	margin-right: 20px;
+}
+
+.modal-login textarea{
+	margin-left: 80px;
+	margin-bottom: 25px;
+	margin-top: 10px;
+	box-sizing: border-box;
+	min-height: 115px;
+	width: 460px;
+	padding: 9px 15px;
+	font-size: 13px;
+	line-height: 18px;
+	color: #999999;
+	font-family: "PT Sans", Arial, sans-serif;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	resize: none;
+}
+
+.modal-footer{
+	padding: 0;
+    margin: 0;
+    background-color: #eeeeee;
+}
+
+.modal-send{
+	width: 460px;
+	margin-left: 80px;
+	margin-top: 38px;
+	margin-bottom: 38px;
+	background-color: #ff3333;
+	text-transform: uppercase;
+	padding: 10px 0;
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.modal-send:hover{
+	background-color: #C92C37;
+}
+
+.modal-send:active{
+	background-color: #BA2632;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    transform: translateY(40px);
+  }
+
+  80% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+
+/*----------------------------------------------------------modal-map----------------------------------------------*/
+
+.modal-map{
+	display: none;
+	position: fixed;
+	top: 120px;
+  	left: 50%;
+	width: 940px;
+	height: 450px;
+	margin-left: -470px;
+	z-index: 100;
+	box-shadow: 0 0 16px 0 #000;
+}
+
+.modal-map-show {
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-map-item{
+	position: relative;
+}
+
+.modal-map iframe {
+	position: relative;
+	z-index: 2;
+	border: none;
+}
+
+.modal-map img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.modal-map-close {
+	position: absolute;
+  	top: 10px;
+  	right: 10px;
+	width: 22px;
+	height: 22px;
+	font-size: 0;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	z-index: 5;
+}
+
+.modal-map-close::before,
+.modal-map-close::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+  	left: 2px;
+	width: 19px;
+	height: 3px;
+	background-color: #ff3333;
+}
+
+.modal-map-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-map-close::after {
+	transform: rotate(-45deg);
+}
+
+/*------------------------------------------------------modal-buy------------------------------------------------*/
+
+.modal-buy{
+	display: none;
+	position: fixed;
+	top: 150px;
+  	left: 50%;
+	width: 620px;
+	background-color: #FCFDFD;
+	margin-left: -310px;
+	z-index: 100;
+	box-shadow: 0 0 16px 0 #000;
+	border-top: 7px solid #ff6666;
+	box-sizing: border-box;
+}
+
+.modal-buy-show{
+	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-buy-close{
+	position: absolute;
+  	top: 10px;
+  	right: 10px;
+	width: 22px;
+	height: 22px;
+	font-size: 0;
+	background-color: #FCFDFD;
+	border: 0;
+	cursor: pointer;
+}
+
+.modal-buy-close::before,
+.modal-buy-close::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+  	left: 2px;
+	width: 19px;
+	height: 3px;
+	background-color: #ff3333;
+}
+
+.modal-buy-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-buy-close::after {
+	transform: rotate(-45deg);
+}
+
+.modal-buy h3{
+	position: relative;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	margin: 0;
+	padding-left: 180px;
+	padding-top: 53px;
+	padding-bottom: 60px;
+}
+
+.modal-buy h3:before{
+	content: "";
+	position: absolute;
+	width: 66px;
+	height: 66px;
+	top: 35px;
+	left: 80px;
+	background-image: url("../img/ok.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.modal-buy-item{
+	background-color: #eeeeee;
+}
+
+.modal-buy-item button{
+	font-size: 14px;
+	line-height: 18px;
+	width: 220px;
+	text-transform: uppercase;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+}
+
+.left-button{
+	margin-left: 80px;
+	margin-right: 20px;
+	color: #ffffff;
+	background-color: #EF3644;
+}
+
+.left-button:hover,
+.left-button:focus{
+	background-color: #C92C37;
+}
+
+.left-button:active{
+	background-color: #BA2632;
+}
+
+.right-button{
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.right-button:hover,
+.right-button:focus{
+	background-color: #F5F5F5;
+}
+
+.right-button:active{
+	background-color: #DEDEDE;
 }
