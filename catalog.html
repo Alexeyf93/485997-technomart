@@ -15,12 +15,13 @@
 			  	<section class="order-navigation">
 			  		<a href="index.html" class="logo">Техномарт</a>
 
-			  		<form action="#" method="post" class="order-navigation-item">
-			  			<label class="order-navigation-item2">
-							<button class="search">
-								<svg class="search-img" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>Поиск:</button>
-							<input class="search-catalog" type="text" name="search-text" placeholder="Перфоратор">
-						</label>
+			  		<form action="#" method="post" class="search-form">
+			  			<label for="search-request">
+                			<span class="visually-hidden">Поиск по сайту:</span>
+              			</label>
+  						<input class="search-field" type="search" name="search-request" id="search-request" placeholder="Поиск:" autocomplete="on">
+  						<button class="button visually-hidden" type="submit" value="Поиск" tabindex="-1">Поиск</button>
+
 					</form>
 					
 					<button class="bookmarks">Закладки: 0</button>
@@ -38,13 +39,16 @@
 					
 					<div class="address-item address-item-catalog">
 						<p class="tel">+7 (812) 555-05-55</p>
-						<span>г.Санкт-Петербург, ул. Конюшенная, д. 19/8</span>
+						<span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
 					</div>
 
 					<div class="address-right">
-						<p class="address-text">Равшан Джамшутович</p>
-						<a href="#">Мои заказы</a>
-						<a href="#">Личный кабинет</a>
+						<div class="address-text">
+							<a class="address-right-user" href="">Равшан Джамшутович</a>
+							<a class="address-right-close" href=""></a>
+						</div>
+						<a class="address-text-footer" href="#">Мои заказы</a>
+						<a class="address-text-footer" href="#">Личный кабинет</a>
 					</div>
 				</section>	
 			</div>
@@ -134,7 +138,7 @@
 
 				       	<ul class="filter-list2">
 				       		<li>
-				      			<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="battery">
+				      			<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" id="battery" checked>
 		    					<label for="battery">Аккумуляторные</label>
 		    				</li>
 		  					<li>
@@ -155,8 +159,14 @@
 		        	<a href="#" class="sorting-text1 sorting-active">По цене</a>
 		        	<a href="#" class="sorting-text2">По типу</a>
 		        	<a href="#" class="sorting-text3">По функционалу</a>
-		        	<svg class="sorting-img1" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
-		        	<svg class="sorting-img2" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+		        	<a href="#" class="sorting-up">
+		        		<span class="visually-hidden">Упорядочить по возрастанию</span>
+		        		<!-- <svg class="sorting-img1" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg> -->
+		        	</a>
+		        	<a href="#" class="sorting-down">
+		        		<span class="visually-hidden">Упорядочить по убыванию</span>
+		        		<!-- <svg class="sorting-img2" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg> -->
+		        	</a>
 		        </div>
 
 		        <div class="catalog-product-item">
@@ -338,11 +348,11 @@
 		        <p class="footer-copyright">
 		        	<div class="footer-copyright-left">
 						<b>Обратная связь:</b> 
-						<a class="button-footer" href="https://htmlacademy.ru">mail@html academy</a>
+						<a class="button-footer" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
 					</div>
 					<div class="footer-copyright-right">
-				        <b>Разработано-</b> 
-				        <a class="button-footer" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+				        <b>Разработано -</b> 
+				        <a class="button-footer" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 				    </div>
 		      	</p>
 	      	</div>
@@ -355,8 +365,8 @@
 		<button class="modal-buy-close" type="button">Закрыть</button>
 		
 		<div class="modal-buy-item">
-			<button class="left-button">Оформить заказ</button>
-			<button class="right-button">Продолжить покупки</button>
+			<a class="left-button">Оформить заказ</a>
+			<a class="right-button">Продолжить покупки</a>
 		</div>
 		
 	</section>

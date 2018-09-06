@@ -16,12 +16,13 @@
 			  	<section class="order-navigation">
 			  		<a class="logo">Техномарт</a>
 
-			  		<form action="#" method="post" class="order-navigation-item">
-			  			<label class="order-navigation-item2">
-							<button class="search">
-								<svg class="search-img" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>Поиск:</button>
-							<input type="text" name="search-text" placeholder="Перфоратор">
-						</label>
+			  		<form action="#" method="post" class="search-form">
+			  			<label for="search-request">
+                			<span class="visually-hidden">Поиск по сайту:</span>
+              			</label>
+  						<input class="search-field" type="search" name="search-request" id="search-request" placeholder="Поиск:" autocomplete="on">
+  						<button class="button visually-hidden" type="submit" value="Поиск" tabindex="-1">Поиск</button>
+
 					</form>
 					
 					<button class="bookmarks">Закладки: 0</button>
@@ -39,7 +40,7 @@
 					
 					<div class="address-item">
 						<p class="tel">+7 (812) 555-05-55</p>
-						<span>г.Санкт-Петербург, ул. Конюшенная, д. 19/8</span>
+						<span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
 					</div>
 
 					<button class="enter">Войти</button>
@@ -87,7 +88,7 @@
 					</div>
 				</div>
 				
-				<div class="description-items-slaider">
+				<div class="description-items-slider">
 					<div class="description-right">
 						<div class="description-item4">
 							<h3>Скидка 50%</h3>
@@ -100,12 +101,22 @@
 					</div>
 					
 					
-					<div class="slaider">
-						<img src="img/slaider1.jpg" alt="Экземпляр дрели" width="620" height="265">
-						<!-- <img src="img/slaider2.jpg" alt="Экземпляр перфоратора" width="620" height="265"> -->
-						<div class="slaider-item">
+					<div class="slider">
+						<img src="img/slider1.jpg" alt="Экземпляр дрели" width="620" height="265">
+						<div class="slider-item">
 							<p>Дрели</p>
 							<span>Соседям на радость!</span>
+						</div>
+						<a href="catalog.html" class="button">Открыть каталог</a>
+						
+					</div>
+
+					<div class="slider slider2">
+						<img src="img/slider2.jpg" alt="Экземпляр перфоратора" width="620" height="265">
+						
+						<div class="slider-item">
+							<p>Перфораторы</p>
+							<span>Настоящие мужские игрушки</span>
 						</div>
 						<a href="catalog.html" class="button">Открыть каталог</a>
 						
@@ -201,33 +212,41 @@
 					   Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
 					<ul class="service-list">
-						<li><a href="#" class="service-list-line service-active">Доставка</a>
-							<div class="service-list-item">
-								<h4>Доставка</h4>
-								<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
-								   Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-							</div>
-							   <img src="img/delivery.png" alt="Доставка" width="470" height="260">
-						</li>
-						<li><a href="#">Гарантия</a>
-							<!--<div class="service-list-item">
-									<h4>Гарантия</h4>
-									<p>Если купленный у нас товар поломается или заискрит,
-									   а также в случае пожара, спровоцированного его возгаранием,
-									   вы всегда можете быть уверены в нашей гарантии. Мы обменяем
-									   сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+						<li>
+							<a href="#" class="service-list-line service-active">Доставка</a>
+							<div >
+								<div class="service-list-item">
+									<h4>Доставка</h4>
+									<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
+									   Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
 								</div>
-								<img src="img/warranty.png" alt="100% гарантия" width="390" height="285"> -->
+								   <img src="img/delivery.png" alt="Доставка" width="470" height="260">
+							</div>
 						</li>
-						<li><a href="#">Кредит</a>
-							<!-- 
-							<div class="service-list-item">
-								<h4>Кредит</h4>
-								<p>Залезть в долговую яму стало проще!
-							   		Кредитные консультанты придут вам на помощь.</p>
-							</div>							   
-							<img src="img/credit.png" alt="Кредит" width="465" height="285">
-							<a href="#" class="button">Отправить заявку</a> -->
+						<li>
+							<a href="#">Гарантия</a>
+							<div class="service-list-item-none">
+								<div class="service-list-item2">
+										<h4>Гарантия</h4>
+										<p>Если купленный у нас товар поломается или заискрит,
+										   а также в случае пожара, спровоцированного его возгаранием,
+										   вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+										   сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+									</div>
+									<img class="service-list-img2" src="img/warranty.png" alt="100% гарантия" width="390" height="285"> 
+							</div>
+						</li>
+						<li>
+							<a href="#">Кредит</a>
+							<div class="service-list-item-none">
+								<div class="service-list-item3">
+									<h4>Кредит</h4>
+									<p class="service-list-text">Залезть в долговую яму стало проще!
+								   		Кредитные консультанты придут вам на помощь.</p>
+								</div>							   
+								<img class="service-list-img3" src="img/credit.png" alt="Кредит" width="465" height="285">
+								<a  href="#" class="service-button">Отправить заявку</a> 
+							</div>
 						</li>
 					</ul>
 				</div>
@@ -237,13 +256,15 @@
 				<div class="about-contacts">
 					<section class="about-us">
 						
-						<h3>Компания "Техномарт"</h3>
+						<h3>Компания «Техномарт»</h3>
 						<p class="about-us-text1">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 						<p class="about-us-text2">Мы можем доставить ваш товар в самые отдаленные точки Россиии!
 						  <br>Техномарт работает со многими транспортными компаниями:</p>
-						<p class="about-us-text3">Деловые линии</p>
-						<p class="about-us-text3">Авторейдинг</p>
-						<p class="about-us-text3 bottom-text">ЖелДорЭкспедиция</p>
+						<ul class="about-us-list">
+							<li class="about-us-text3">Деловые линии</li>
+							<li class="about-us-text3">Авторейдинг</li>
+							<li class="about-us-text3 bottom-text">ЖелДорЭкспедиция</li>
+						</ul>
 
 						<a href="#" class="button">Подробнее о компании</a>
 
@@ -294,7 +315,7 @@
 	<footer>
 		<div class="container">
 			<div class="footer-items">
-				<p class="footer-left">&copy; 2010-2017 Компания "Техномарт" Все права защищены</p>
+				<p class="footer-left">&copy; 2010-2017 Компания «Техномарт» Все права защищены</p>
 				<ul>
 					<li><a class="footer-social social-button" href="#">
 						<span class="visually-hidden">Подписывайтесь на нас в Вконтакте</span>
@@ -359,6 +380,18 @@
 			<img src="img/map.jpg" alt="Адрес на карте г.Санкт-Петербург, ул. Конюшенная, д. 19/8" width="940" height="450">
 			<button class="modal-map-close" type="button">Закрыть</button>
 		</div>
+	</section>
+
+	<section class="modal-buy">
+
+		<h3>Товар добавлен в корзину!</h3>
+		<button class="modal-buy-close" type="button">Закрыть</button>
+		
+		<div class="modal-buy-item">
+			<a class="left-button">Оформить заказ</a>
+			<a class="right-button">Продолжить покупки</a>
+		</div>
+		
 	</section>
 
 	<script src="js/popap.js"></script>
