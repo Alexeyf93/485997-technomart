@@ -1378,7 +1378,7 @@ input[type="radio"].visually-hidden {
 	background-color: #BA2632;
 }
 
-.navigation p{
+.navigation .navigation-text{
 	color: #DDE1E6;
 	font-size: 18px;
 	line-height: 24px;
@@ -1410,8 +1410,12 @@ input[type="radio"].visually-hidden {
 }
 
 .navigation-list-bottom li{
-	margin-top: 35px;
-	margin-left: 61px;
+	margin-top: 20px;
+	margin-left: 59px;
+}
+
+.navigation-list-bottom li:first-child{
+	margin-left: 25px;
 }
 
 .navigation-list-top li,
@@ -1432,7 +1436,7 @@ input[type="radio"].visually-hidden {
 }
 
 .navigation-list-top li:first-child{
-	margin-left: 40px;
+	margin-left: 0;
 }
 
 .navigation-list-top li:last-child{

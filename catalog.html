@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Technomart</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/minstyle.css" rel="stylesheet" >
-    <!-- <link href="css/style.css" rel="stylesheet" > -->
+    <!-- <link href="css/minstyle.css" rel="stylesheet" > -->
+    <link href="css/style.css" rel="stylesheet" >
 </head>
 <body>
 	<header class="main-header">
@@ -92,7 +92,7 @@
 		        <form method="get" action="https://echo.htmlacademy.ru" class="filter">
 		        	<p>Фильтр:</p>
 		        	
-		        	<label class="filter-item filter-item1"><p class="filter-text">Цена:</p>
+		        	<div class="filter-item filter-item1"><p class="filter-text">Цена:</p>
 
 		        		<div class="range-filter">
             				<div class="range-controls">
@@ -109,9 +109,9 @@
           					</div>
         				</div>
 
-		        	</label>
+		        	</div>
 
-		        	<legend class="filter-item filter-item2">Производители:</legend>
+		        	<div class="filter-item filter-item2">Производители:</div>
 				        <ul class="filter-list">
 				          <li>
 				            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
@@ -296,26 +296,26 @@
 		<div class="container">
 			<div class="navigation-items">
 				<div class="navigation-item-left">
-					<a href="index.html" class="logo">Техномарт</a>
-					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>		
+					<a class="logo">Техномарт</a>
+					<p class="navigation-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>		
 					   +7 (812) 555-05-55</p>
 				</div>
 				<div class="navigation-item-right">
-					<ul class="navigation-list">
-						<div class="navigation-list-top">
+					<div class="navigation-list">
+						<ul class="navigation-list-top">
 			        		<li><a href="#">Компания</a></li>
 			        		<li><a href="#">Новости</a></li>
-			        		<li><a >Каталог</a></li>
+			        		<li><a href="catalog.html">Каталог</a></li>
 			        		<li><a href="#">Доставка</a></li>
 			        		<li><a href="#">Контакты</a></li>
-			        	</div>
-			        	<div class="navigation-list-bottom">
+			        	</ul>
+			        	<ul class="navigation-list-bottom">
 			        		<li><a href="#" class="orange">Материалы</a></li>
 			        		<li><a href="#" class="orange">Техника</a></li>
 			        		<li><a href="#" class="orange">Инструмент</a></li>
 			        		<li><a href="#" class="orange">Спецпредложения</a></li>
-			        	</div>
-		        	</ul>
+			        	</ul>
+		        	</div>
 				</div>
 			</div>
 		</div>
@@ -335,7 +335,7 @@
 					</li>
 					<li><a class="footer-social social-button" href="#">
 					        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74">
-						        <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></path>
+						        <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/>
 					        </svg></a>
 					</li>
 					<li><a class="footer-social social-button" href="#">
@@ -346,6 +346,7 @@
         				</svg></a>
 					</li>
 		        </ul>
+		        
 		        <p class="footer-copyright">
 		        	<div class="footer-copyright-left">
 						<b>Обратная связь:</b> 
@@ -355,7 +356,8 @@
 				        <b>Разработано -</b> 
 				        <a class="button-footer" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 				    </div>
-		      	</p>
+				    </p>
+		      	
 	      	</div>
 		</div>
 	</footer>
