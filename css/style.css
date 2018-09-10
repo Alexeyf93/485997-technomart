@@ -1500,15 +1500,16 @@ footer{
 	width: 230px;
 	padding: 35px 0;
 	margin: 0;
-	margin-right: 155px;
+	margin-right: 160px;
 }
 
 .footer-items ul{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	width: 130px;
 	list-style: none;
-	margin-right: 115px;
+	margin-right: 120px;
 	padding: 0;
 }
 
@@ -1548,13 +1549,13 @@ footer{
 }
 
 .footer-copyright-left{
-	width: 150px;
+	width: 140px;
 	margin-top: 35px;
-	margin-right: 35px;
+	margin-right: 47px;
 }
 
 .footer-copyright-right{
-	width: 120px;
+	width: 100px;
 	margin: 0;
 	margin-top: 35px;
 	padding: 0;
@@ -1616,7 +1617,7 @@ footer{
 	display: -ms-flexbox;
 	display: flex;
 	margin: 0;
-	margin-top: -37px;
+	margin-top: -40px;
 	padding: 0;
 }
 
@@ -1676,7 +1677,7 @@ footer{
 	line-height: 30px;
 	padding: 30px 28px;
 	margin: 0;
-	margin-top: 17px;
+	margin-top: 20px;
 	margin-bottom: 18px;
 	background-color: #F2F6F9;
 }
