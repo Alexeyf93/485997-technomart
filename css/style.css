@@ -1496,10 +1496,11 @@ footer{
 }
 
 .footer-left{
-	width: 245px;
+	box-sizing: border-box;
+	width: 230px;
 	padding: 35px 0;
 	margin: 0;
-	margin-right: 120px;
+	margin-right: 155px;
 }
 
 .footer-items ul{
@@ -1507,7 +1508,8 @@ footer{
 	display: -ms-flexbox;
 	display: flex;
 	list-style: none;
-	margin-right: 110px;
+	margin-right: 115px;
+	padding: 0;
 }
 
 .footer-social{
@@ -1541,15 +1543,21 @@ footer{
 	background-color: #ED3743;
 }
 
+.footer-copyright{
+	display: flex;
+}
+
 .footer-copyright-left{
 	width: 150px;
 	margin-top: 35px;
-	margin-right: 45px;
+	margin-right: 35px;
 }
 
 .footer-copyright-right{
 	width: 120px;
+	margin: 0;
 	margin-top: 35px;
+	padding: 0;
 }
 
 .button-footer{
