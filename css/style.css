@@ -409,10 +409,6 @@ main{
 	padding-left: 22px;
 }
 
-/*.main-navigation li:last-child{
-	padding-left: 18px;
-}*/
-
 .main-navigation a:hover,
 .main-navigation a:focus{
 	background-color: #293448;
@@ -670,7 +666,6 @@ main{
 	height: 265px;
 	background-color: #170D0C;
 	margin-right: 20px;
-	/*margin-bottom: 53px;*/
 }
 
 .slider::before{
@@ -846,6 +841,7 @@ main{
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	width: 220px;
+	vertical-align: top;
 	min-height: 316px;
 	border: 1px solid #EAEAEA;
 	font-family: "PT Sans", Arial, sans-serif;
@@ -1078,7 +1074,6 @@ main{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	/*align-items: flex-start;*/
 }
 
 .service-list img{
@@ -1091,14 +1086,6 @@ main{
 	position: absolute;
 	left: 470px;
 	top: 0;
-}
-
-.service-list-item3{
-	/*position: absolute;
-	left: 320px;
-	top: 0;
-	width: 280px;
-	z-index: 2;*/
 }
 
 .service-list .service-list-img3{
@@ -1803,7 +1790,6 @@ footer{
 	width: 215px;
 	padding-bottom: 25px;
 	border-bottom: 1px solid #E8E8E8;
-	/*margin-top: 49px;*/
 }
 
 .range-controls {
@@ -1857,6 +1843,7 @@ footer{
 
 .price-controls label {
   	display: inline-block;
+  	vertical-align: top;
   	font-size: 16px;
   	text-transform: uppercase;
 }
@@ -2318,6 +2305,7 @@ footer{
 	display: inline-block;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
+	vertical-align: top;
 	width: 220px;
 	min-height: 316px;
 	border: 1px solid #EAEAEA;
