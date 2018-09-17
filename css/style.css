@@ -102,7 +102,7 @@ main{
 	background-color: #BA2632;
 }
 
-.order-navigation button{
+.order-navigation a{
 	font-size: 17px;
   	line-height: 18px;
   	background-color: #293448;
@@ -2056,7 +2056,6 @@ footer{
 
 .order-navigation .basket-catalog{
 	background-color: #EF3644;
-	padding: 0;
 	padding-left: 50px;
 	padding-right: 25px;
 }
