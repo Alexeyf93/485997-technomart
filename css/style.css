@@ -694,7 +694,7 @@ main{
 
 }
 
-.slider-circle-left{
+.slider-circle{
 	border-radius: 50%;
 	width: 10px;
 	height: 10px;
@@ -706,7 +706,7 @@ main{
 	margin-right: 10px;
 }
 
-.slider-circle-right{
+.circle-active{
 	box-sizing: border-box;
 	border-radius: 50%;
 	margin: 0;
