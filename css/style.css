@@ -707,16 +707,10 @@ main{
 }
 
 .circle-active{
-	box-sizing: border-box;
-	border-radius: 50%;
-	margin: 0;
-	padding: 0;
-	width: 10px;
-	height: 10px;
-	border: none;
 	background-color: #EE3543;
 	border: 2px solid #fff;
-	cursor: pointer;
+	margin-right: 10px;
+	
 }
 
 .slider p{
