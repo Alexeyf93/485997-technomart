@@ -664,8 +664,8 @@ main{
 
 .slider-button-left{
 	position: absolute;
-	top: 90px;
-	left: 0;
+	top: 113px;
+	left: 25px;
 	height: 42px;
 	width: 24px;
 	background-color: transparent;
@@ -677,8 +677,8 @@ main{
 
 .slider-button-right{
 	position: absolute;
-	top: 90px;
-	left: 555px;
+	top: 113px;
+	left: 577px;
 	height: 42px;
 	width: 24px;
 	background-color: transparent;
@@ -690,11 +690,11 @@ main{
 
 .slider-circle-left{
 	position: absolute;
-	top: 195px;
-	left: 270px;
+	top: 220px;
+	left: 295px;
 	border-radius: 50%;
-	width: 12px;
-	height: 12px;
+	width: 10px;
+	height: 10px;
 	padding: 0;
 	border: none;
 	background-color: #fff;
@@ -703,16 +703,16 @@ main{
 .slider-circle-right{
 	position: absolute;
 	position: absolute;
-	top: 195px;
-	left: 290px;
+	top: 220px;
+	left: 315px;
 	box-sizing: border-box;
 	border-radius: 50%;
 	padding: 0;
-	width: 12px;
-	height: 12px;
+	width: 10px;
+	height: 10px;
 	border: none;
 	background-color: #EE3543;
-	border: 3px solid #fff;
+	border: 2px solid #fff;
 }
 
 .slider p{
@@ -879,7 +879,6 @@ main{
 }
 
 .product img{
-	height: 88px;
 	margin: 0 auto;
 	margin-bottom: 40px;
 	padding-top: 43px;
@@ -2342,7 +2341,6 @@ footer{
 }
 
 .catalog-product img{
-	height: 88px;
 	margin: 0 auto;
 	padding-top: 40px;
 	margin-bottom: 42px;
