@@ -1950,7 +1950,7 @@ footer{
 	opacity: 0.3;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   	content: "";
   	position: absolute;
   	top: -2px;
@@ -1963,7 +1963,7 @@ footer{
 	opacity: 0.6;
 }
 
-.filter-input-checkbox:checked + label:hover::after{
+.filter-input-checkbox:checked + label:hover::before{
 	opacity: 1;
 }
 
