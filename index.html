@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Technomart</title>
 	<link href="css/minnormalize.css" rel="stylesheet">
-	<link href="css/minstyle.css" rel="stylesheet" >
+	<link href="css/style.css" rel="stylesheet" >
 </head>
 <body>
 
@@ -99,16 +99,22 @@
 					
 					<section class="slider">
 
-						<button class="slider-button-left"></button>
-						<button class="slider-button-right"></button>
-						<div class="slider-controls">
-							<button class="slider-circle"></button>
-							<button class="slider-circle circle-active"></button>
-						</div>
+						<button type="button" class="slider-button-left"></button>
+						<button type="button" class="slider-button-right"></button>
+						<ul class="slider-controls">
+							<li>
+								<input class="visually-hidden slider-circle" type="radio" name="slider-group" id="slide-first">
+								<label for="slide-first"></label>
+							</li>
+							<li>
+								<input class="visually-hidden slider-circle" type="radio" name="slider-group" id="slide-second" checked>
+								<label for="slide-second"></label>
+							</li>
+						</ul>
 
 						<a href="catalog.html" class="button">Открыть каталог</a>
 
-						<div class="">
+						<div class="slide-first">
 							<img src="img/slider1.jpg" alt="Экземпляр дрели" width="620" height="265">
 							<div class="slider-item">
 								<p>Дрели</p>
@@ -116,7 +122,7 @@
 							</div>
 						</div>
 
-						<div class="slider2">
+						<div class="slide-second">
 							<img src="img/slider2.jpg" alt="Экземпляр перфоратора" width="620" height="265">	
 							<div class="slider-item">
 								<p>Перфораторы</p>
@@ -144,8 +150,8 @@
 						<div class="old-price">32500 Р.</div>
 						<div class="new-price">25500 Р.</div>
 						<div class="product-item">
-							<button type=button class="product-buy">Купить</button>
-							<button type=button class="product-bookmarks">В закладки</button>
+							<button type="button" class="product-buy">Купить</button>
+							<button type="button" class="product-bookmarks">В закладки</button>
 						</div>
 					</div>
 					<div class="product">
@@ -154,8 +160,8 @@
 						<div class="old-price">22500 Р.</div>
 						<div class="new-price">15500 Р.</div>
 						<div class="product-item">
-							<button type=button class="product-buy">Купить</button>
-							<button type=button class="product-bookmarks">В закладки</button>
+							<button type="button" class="product-buy">Купить</button>
+							<button type="button" class="product-bookmarks">В закладки</button>
 						</div>
 					</div>
 					<div class="product">
@@ -164,8 +170,8 @@
 						<div class="old-price">30500 Р.</div>
 						<div class="new-price">25500 Р.</div>
 						<div class="product-item">
-							<button type=button class="product-buy">Купить</button>
-							<button type=button class="product-bookmarks">В закладки</button>
+							<button type="button" class="product-buy">Купить</button>
+							<button type="button" class="product-bookmarks">В закладки</button>
 						</div>
 					</div>
 					<div class="product new">
@@ -174,8 +180,8 @@
 						<div class="old-price hidden">32500 Р.</div>
 						<div class="new-price">12500 Р.</div>
 						<div class="product-item">
-							<button type=button class="product-buy">Купить</button>
-							<button type=button class="product-bookmarks">В закладки</button>
+							<button type="button" class="product-buy">Купить</button>
+							<button type="button" class="product-bookmarks">В закладки</button>
 						</div>
 					</div>
 
